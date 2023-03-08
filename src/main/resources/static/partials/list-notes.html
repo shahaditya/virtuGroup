@@ -1,0 +1,16 @@
+<h4>Available notes</h4>
+
+<md-list>
+    <ul class="notes-list">
+    <md-list-item class="md-2-line" ng-repeat="note in notes.notes">
+        <li >
+            <p class="note-summary">{{note.summary}}</p>
+            <p class="note-timedate"><i>{{note.updatedTime}}</i></p>
+        </li>
+    </md-list-item>
+    </ul>
+</md-list>
+
+<md-button style="float:right" ng-click="newNoteView()">
+    New Note
+</md-button>

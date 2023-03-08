@@ -1,0 +1,23 @@
+<h4>Note</h4>
+
+<form name="createEditForm">
+    <md-input-container>
+        <label>Name</label>
+        <input type="text" ng-model="note.name" required md-maxlength="10">
+    </md-input-container>
+
+    <md-input-container>
+        <label>Note text</label>
+        <textarea class="note-body" ng-model="note.summary" rows="10" required md-maxlength="500">
+                </textarea>
+    </md-input-container>
+
+    <div class="action-buttons">
+        <md-button ng-click="save()">
+            Save
+        </md-button>
+        <md-button>
+            Cancel
+        </md-button>
+    </div>
+</form>
